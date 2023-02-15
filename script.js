@@ -22,13 +22,11 @@ let init = function () {
   score1El.textContent = 0;
   current0El.textContent = 0;
   current1El.textContent = 0;
-
   diceEl.classList.add('hidden');
+  player0El.classList.remove('player--winner');
+  player1El.classList.remove('player--winner');
   player0El.classList.add('player--active');
   player1El.classList.remove('player--active');
-  document
-    .querySelector(`.player--${activePlayer}`)
-    .classList.remove('player--winner');
 };
 init();
 
